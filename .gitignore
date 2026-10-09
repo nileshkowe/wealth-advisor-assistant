@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.state/
+.test-state/
+.verification-state/
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+.venv/
+result.json

@@ -1,0 +1,20 @@
+{
+  "client_id": "C001",
+  "currency": "INR",
+  "monthly_income": 100000,
+  "monthly_expenses": 60000,
+  "liquid_assets": 120000,
+  "debt": 50000,
+  "holdings": [
+    {"asset_class": "equity", "value": 900000},
+    {"asset_class": "bonds", "value": 100000}
+  ],
+  "transactions": [
+    {"id": "T001", "date": "2026-09-01", "amount": 900, "direction": "debit", "category": "shopping"},
+    {"id": "T002", "date": "2026-09-05", "amount": 1000, "direction": "debit", "category": "shopping"},
+    {"id": "T003", "date": "2026-09-09", "amount": 1100, "direction": "debit", "category": "shopping"},
+    {"id": "T004", "date": "2026-09-15", "amount": 1200, "direction": "debit", "category": "shopping"},
+    {"id": "T005", "date": "2026-09-20", "amount": 50000, "direction": "debit", "category": "shopping"},
+    {"id": "T006", "date": "2026-09-30", "amount": 100000, "direction": "credit", "category": "salary"}
+  ]
+}

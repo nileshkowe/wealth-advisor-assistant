@@ -1,0 +1,11 @@
+{"timestamp": "2026-10-08T19:04:21.762585+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "run_started"}
+{"timestamp": "2026-10-08T19:04:21.764585+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "agent_started", "agent": "data_fetcher"}
+{"timestamp": "2026-10-08T19:04:21.771585+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "agent_completed", "agent": "data_fetcher"}
+{"timestamp": "2026-10-08T19:04:21.773584+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "agent_started", "agent": "analyzer"}
+{"timestamp": "2026-10-08T19:04:21.774584+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "analysis_decision", "signal_codes": ["low_liquidity", "concentration", "risk_mismatch", "unusual_transaction"]}
+{"timestamp": "2026-10-08T19:04:21.778586+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "agent_completed", "agent": "analyzer"}
+{"timestamp": "2026-10-08T19:04:21.781586+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "agent_started", "agent": "advisory"}
+{"timestamp": "2026-10-08T19:04:21.782587+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "agent_completed", "agent": "advisory"}
+{"timestamp": "2026-10-08T19:04:21.792587+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "review_required", "status": "pending_review"}
+{"timestamp": "2026-10-08T19:04:21.794587+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "run_completed", "status": "pending_review"}
+{"timestamp": "2026-10-08T19:04:22.464888+00:00", "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89", "event": "human_review", "decision": "override"}

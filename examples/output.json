@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "run_id": "f6bcae57-9201-4327-824d-93ccedec5e89",
+  "created_at": "2026-10-08T19:04:21.762585+00:00",
+  "status": "pending_review",
+  "execution": [
+    "data_fetcher",
+    "analyzer",
+    "advisory"
+  ],
+  "errors": [],
+  "client_id": "C001",
+  "currency": "INR",
+  "context": {
+    "risk_tolerance": "conservative",
+    "goals": [
+      "Preserve capital",
+      "Build emergency savings"
+    ],
+    "source": "mock_crm"
+  },
+  "history": [],
+  "analysis": {
+    "metrics": {
+      "monthly_surplus": 40000.0,
+      "emergency_fund_months": 2.0,
+      "total_holdings": 1000000.0,
+      "allocation": {
+        "bonds": 0.1,
+        "equity": 0.9
+      }
+    },
+    "signals": [
+      {
+        "code": "low_liquidity",
+        "severity": "medium",
+        "message": "Liquid assets cover less than three months of expenses.",
+        "evidence": {
+          "months": 2.0,
+          "threshold_months": 3
+        }
+      },
+      {
+        "code": "concentration",
+        "severity": "medium",
+        "message": "More than 70% of holdings are in one asset class.",
+        "evidence": {
+          "asset_class": "equity",
+          "share": 0.9,
+          "threshold_share": 0.7
+        }
+      },
+      {
+        "code": "risk_mismatch",
+        "severity": "high",
+        "message": "Equity allocation exceeds the conservative demo threshold.",
+        "evidence": {
+          "equity_share": 0.9,
+          "threshold_share": 0.5
+        }
+      },
+      {
+        "code": "unusual_transaction",
+        "severity": "high",
+        "message": "Debit unusually large relative to its category peers.",
+        "evidence": {
+          "transaction_id": "T005",
+          "category": "shopping",
+          "amount": 50000.0,
+          "peer_median": 1050.0,
+          "threshold": 3150.0
+        }
+      }
+    ],
+    "limitations": []
+  },
+  "recommendations": [
+    "Discuss building liquid reserves toward at least three months of reported expenses.",
+    "Review asset-class concentration and discuss diversification after confirming goals.",
+    "Validate the CRM risk profile and review equity exposure with the advisor.",
+    "Verify flagged transaction IDs and supporting records with the client before treating them as suspicious."
+  ],
+  "warnings": [],
+  "data_quality": "complete",
+  "review": null,
+  "memory_saved": true
+}
